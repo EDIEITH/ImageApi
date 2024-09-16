@@ -23,41 +23,6 @@
     </table>
     <!-- <button id="btn">click</button> -->
     <script>
-        // console.log("https://random.imagecdn.app/v1/image?width=500&height=150&format=webp");
-
-        // btn.onclick=()=>{
-        //     fetch("https://dog.ceo/api/breeds/image/random")
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data.message)
-        //         document.getElementById("box").style.backgroundImage ="url('" + data.message + "')";
-        //     });
-        // }
-        
-        // fetch("https://dog.ceo/api/breeds/image/random")
-        // .then(res=>res.json())
-        // .then(res=>document.body.innerHTML=`<img src="${res.message}" height='300' width='300'>`)
-        // .catch(err=>console.log(res.message))
-        
-        // fetch("https://random-data-api.com/api/v2/users")
-        // .then(res=>res.json())
-        // .then(res=>console.log(res.avatar))
-
-        // fetch("https://random-data-api.com/api/v2/users")
-        // .then(res=>res.json())
-        // .then(res=>console.log())
-
-        // fetch("https://random-user-api-git-master-abrahamcalsin.vercel.app/api")
-        // .then(res=>res.json())
-        // .then(res=>console.log(res))
-
-        // fetch("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=$")
-        // .then(res=>{return res.blob()})
-        // .then(blob=>{
-        //     const ob = URL.createObjectURL(blob);
-        //     document.getElementById("box").src = ob;
-        // })
-
         fetch("https://api.github.com/users")
         .then(res=>res.json())
         .then(res=>{
@@ -68,30 +33,10 @@
                     <td><a href="${mydata.html_url}">Link'</a></td>
                     <td> "${mydata.id}"</td>
                 </tr>`
-            })
-            
-        });
-            
-            
+            })   
+        });    
         </script>
         </body>
         </html>
 
-
-
-
-
-    //     console.log(res[0])
-    //     tab.innerHTML=`<tr>
-    //         <td>${res[0].login}</td>
-    //         <td><img src='${res[0].avatar_url}' height='100' width='100'></td>
-    //         <td><a href="${res[0].html_url}">Link'</a></td>
-    //         <td> "${res[0].id}"</td>
-    //     </tr>  
-    //     <tr>
-    //         <td>${res[1].login}</td>
-    //         <td><img src='${res[1].avatar_url}' height='100' width='100'></td>
-    //         <td> <a href="${res[1].html_url}"></td>
-    //         <td> "${res[1].id}"</td>
-    //     </tr>
-    // }
+        
